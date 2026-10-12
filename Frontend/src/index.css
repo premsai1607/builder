@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+  --background: #f5f7fa;
+  --foreground: #1f2937;
+  --card: #ffffff;
+  --card-foreground: #1f2937;
+  --muted: #eef2f6;
+  --muted-foreground: #64748b;
+  --border: #e6eaf0;
+  --primary: #f57c00;
+  --primary-foreground: #1f2937;
+  --primary-dark: #b85000;
+  --primary-soft: #fff6ed;
+  --ring: #e06a00;
+  --success: #067647;
+  --success-soft: #e7f6ee;
+  --warning: #9a3412;
+  --warning-soft: #fff4e5;
+  --danger: #b42318;
+  --danger-soft: #fdecec;
+  --danger-solid: #b42318;
+  --info: #1d4ed8;
+  --info-soft: #e8f0fe;
+  --overlay: rgb(15 23 42 / 0.4);
+  --app-shadow: 0 1px 2px rgb(15 23 42 / 0.04), 0 8px 24px rgb(15 23 42 / 0.04);
+  --app-shadow-popover: 0 16px 40px rgb(15 23 42 / 0.12);
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #0f1115;
+  --foreground: #e7e9ee;
+  --card: #171a21;
+  --card-foreground: #e7e9ee;
+  --muted: #1e222b;
+  --muted-foreground: #a8b0bd;
+  --border: rgb(255 255 255 / 0.08);
+  --primary: #f57c00;
+  --primary-foreground: #1f2937;
+  --primary-dark: #ffd4a8;
+  --primary-soft: rgb(245 124 0 / 0.16);
+  --ring: #ffb56a;
+  --success: #6ee7b7;
+  --success-soft: rgb(16 185 129 / 0.16);
+  --warning: #fdba74;
+  --warning-soft: rgb(245 124 0 / 0.16);
+  --danger: #fca5a5;
+  --danger-soft: rgb(239 68 68 / 0.16);
+  --danger-solid: #b42318;
+  --info: #93c5fd;
+  --info-soft: rgb(59 130 246 / 0.18);
+  --overlay: rgb(0 0 0 / 0.62);
+  --app-shadow: 0 1px 2px rgb(0 0 0 / 0.35);
+  --app-shadow-popover: 0 16px 40px rgb(0 0 0 / 0.5);
+}
+
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.4;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.45;
+  --text-base: 0.875rem;
+  --text-base--line-height: 1.5;
+  --text-lg: 1rem;
+  --text-lg--line-height: 1.45;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.35;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 1.25;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-soft: var(--primary-soft);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-danger-solid: var(--danger-solid);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-overlay: var(--overlay);
+  --color-ink: var(--foreground);
+  --color-canvas: var(--background);
+  --color-line: var(--border);
+  --color-orange-50: #fff6ed;
+  --color-orange-100: #ffecd4;
+  --color-orange-200: #ffd4a8;
+  --color-orange-300: #ffb56a;
+  --color-orange-400: #ff8f2a;
+  --color-orange-500: #f57c00;
+  --color-orange-600: #e06a00;
+  --color-orange-700: #b85000;
+  --color-orange-800: #943f0a;
+  --color-orange-900: #7a340c;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --shadow-card: var(--app-shadow);
+  --shadow-popover: var(--app-shadow-popover);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.lucide {
+  stroke-width: 1.5;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--primary);
+  width: 1rem;
+  height: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  animation: focus-in 180ms ease-out;
+}
+
+@keyframes focus-in {
+  from {
+    outline-offset: 5px;
+  }
+  to {
+    outline-offset: 2px;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "followUpsToday": 6,
+  "pendingPurchaseRequests": 4,
+  "paymentsDue": 3,
+  "paymentsDueAmount": 1250000,
+  "lowStock": [
+    {
+      "id": "stk-1",
+      "item": "TMT bars 12mm",
+      "projectId": "prj-skyline",
+      "onHand": "1.2 tons",
+      "reorder": "5 tons"
+    },
+    {
+      "id": "stk-2",
+      "item": "OPC 53 cement",
+      "projectId": "prj-skyline",
+      "onHand": "40 bags",
+      "reorder": "200 bags"
+    },
+    {
+      "id": "stk-3",
+      "item": "Cover blocks",
+      "projectId": "prj-lakeside",
+      "onHand": "180 nos",
+      "reorder": "1,000 nos"
+    },
+    {
+      "id": "stk-4",
+      "item": "Binding wire",
+      "projectId": "prj-metro",
+      "onHand": "12 kg",
+      "reorder": "50 kg"
+    }
+  ],
+  "trends": {
+    "projects": [2, 2, 3, 3, 2, 4, 3, 3],
+    "followUps": [4, 5, 3, 6, 5, 4, 7, 6],
+    "purchases": [2, 3, 5, 4, 6, 3, 5, 4],
+    "payments": [820000, 960000, 1100000, 980000, 1420000, 1180000, 1510000, 1250000]
+  },
+  "cashflow": [
+    { "month": "May", "inflow": 4200000, "outflow": 3100000 },
+    { "month": "Jun", "inflow": 3800000, "outflow": 3600000 },
+    { "month": "Jul", "inflow": 5100000, "outflow": 3400000 },
+    { "month": "Aug", "inflow": 4600000, "outflow": 4100000 },
+    { "month": "Sep", "inflow": 5400000, "outflow": 3900000 },
+    { "month": "Oct", "inflow": 4900000, "outflow": 4300000 }
+  ],
+  "tasks": [
+    { "id": "task-1", "title": "Call Kiran Rao", "detail": "4:30 PM · Lakeside villa price list" },
+    { "id": "task-2", "title": "Approve plywood request", "detail": "Metro Link Warehouse · stores" },
+    { "id": "task-3", "title": "Site walk at Skyline", "detail": "11:00 AM · slab shuttering, tower B" },
+    { "id": "task-4", "title": "Send labour attendance", "detail": "Accounts · yesterday's muster" }
+  ],
+  "dueBills": [
+    { "id": "bill-1", "vendor": "UltraTech dealer", "project": "Skyline Residences", "amount": 480000, "due": "Tomorrow" },
+    { "id": "bill-2", "vendor": "Site labour", "project": "Metro Link Warehouse", "amount": 520000, "due": "Friday" },
+    { "id": "bill-3", "vendor": "Electrical contractor", "project": "Lakeside Villas", "amount": 250000, "due": "Friday" }
+  ],
+  "notifications": [
+    {
+      "id": "nt-1",
+      "title": "Cement bill due tomorrow",
+      "body": "Skyline Residences · ₹4,80,000 to UltraTech dealer",
+      "time": "2h ago"
+    },
+    {
+      "id": "nt-2",
+      "title": "Follow-up at 4:30 PM",
+      "body": "Kiran Rao asked for the Lakeside villa price list",
+      "time": "Today"
+    },
+    {
+      "id": "nt-3",
+      "title": "Purchase request waiting",
+      "body": "Metro Link Warehouse · plywood and nails",
+      "time": "Yesterday"
+    }
+  ]
+}

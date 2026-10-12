@@ -1,0 +1,80 @@
+[
+  {
+    "id": "prj-skyline",
+    "type": "client",
+    "name": "Skyline Residences",
+    "about": "Two residential towers with 128 apartments and a shared clubhouse in Gachibowli.",
+    "status": "In Progress",
+    "expectedBudget": 185000000,
+    "pricePerSqft": 7200,
+    "startDate": "2025-06-01",
+    "address": "Gachibowli, Hyderabad",
+    "amenities": ["Clubhouse", "Swimming pool", "Gym", "Covered parking"],
+    "progress": 62
+  },
+  {
+    "id": "prj-metro",
+    "type": "client",
+    "name": "Metro Link Warehouse",
+    "about": "Grade-A warehouse with dock levellers for a logistics client on the Hyderabad-Mumbai highway.",
+    "status": "Active",
+    "expectedBudget": 72000000,
+    "pricePerSqft": 4100,
+    "startDate": "2025-11-15",
+    "address": "Patancheru, Hyderabad",
+    "amenities": ["Covered parking", "24x7 security", "Power backup"],
+    "progress": 28
+  },
+  {
+    "id": "prj-river",
+    "type": "internal",
+    "name": "Riverfront Clubhouse",
+    "about": "Company-owned clubhouse and banquet block beside the Kokapet lakefront plots.",
+    "status": "Completed",
+    "expectedBudget": 28000000,
+    "pricePerSqft": 9800,
+    "startDate": "2024-02-10",
+    "address": "Kokapet, Hyderabad",
+    "amenities": ["Clubhouse", "Swimming pool", "Landscaped garden"],
+    "progress": 100
+  },
+  {
+    "id": "prj-civic",
+    "type": "client",
+    "name": "Civic Health Wing",
+    "about": "Outpatient wing and diagnostics block for a hospital trust in Secunderabad.",
+    "status": "Pending",
+    "expectedBudget": 94000000,
+    "pricePerSqft": 5600,
+    "startDate": "2026-11-01",
+    "address": "Secunderabad",
+    "amenities": ["Lift", "Power backup", "24x7 security"],
+    "progress": 8
+  },
+  {
+    "id": "prj-lakeside",
+    "type": "client",
+    "name": "Lakeside Villas",
+    "about": "Row villas with a private driveway and a shared kids' play lawn in Whitefield.",
+    "status": "In Progress",
+    "expectedBudget": 126000000,
+    "pricePerSqft": 8100,
+    "startDate": "2025-09-20",
+    "address": "Whitefield, Bengaluru",
+    "amenities": ["Landscaped garden", "Covered parking", "Kids play area"],
+    "progress": 35
+  },
+  {
+    "id": "prj-harbour",
+    "type": "internal",
+    "name": "Harbour Yard",
+    "about": "Material yard and site office planned near the Kochi port. Work was stopped after the lease fell through.",
+    "status": "Cancelled",
+    "expectedBudget": 31000000,
+    "pricePerSqft": 4500,
+    "startDate": "2025-03-01",
+    "address": "Willingdon Island, Kochi",
+    "amenities": ["24x7 security"],
+    "progress": 15
+  }
+]

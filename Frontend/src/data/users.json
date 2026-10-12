@@ -1,0 +1,20 @@
+[
+  {
+    "id": "usr-arjun",
+    "name": "Arjun Mehta",
+    "email": "arjun.mehta@buildpro.in",
+    "password": "Admin123",
+    "role": "Admin",
+    "phone": "9845012345",
+    "designation": "Administrator"
+  },
+  {
+    "id": "usr-meera",
+    "name": "Meera Iyer",
+    "email": "meera.iyer@buildpro.in",
+    "password": "Manager123",
+    "role": "Project Manager",
+    "phone": "9845098765",
+    "designation": "Project Manager"
+  }
+]

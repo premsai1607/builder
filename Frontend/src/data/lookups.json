@@ -1,0 +1,22 @@
+{
+  "departments": ["Management", "Engineering", "Accounts", "Sales", "Stores"],
+  "designations": [
+    "Administrator",
+    "Project Manager",
+    "Site Engineer",
+    "Accountant",
+    "Sales Executive",
+    "Storekeeper"
+  ],
+  "amenities": [
+    "Clubhouse",
+    "Swimming pool",
+    "Gym",
+    "Covered parking",
+    "Lift",
+    "Landscaped garden",
+    "24x7 security",
+    "Power backup",
+    "Kids play area"
+  ]
+}
